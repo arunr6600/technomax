@@ -1,0 +1,45 @@
+@import '~src/scss/_variables';
+
+.navbar {
+  align-items: flex-start;
+  padding: 35px 0px;
+  .navbar-brand {
+    max-width: 201px;
+    max-height: 85px;
+    figure {
+      margin: 0;
+    }
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .nav-link{
+    position: relative;
+    font-size: 14px;
+    font-family: $archivo;
+    font-weight: 400;
+    color: $white;
+    margin-right: 30px;
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+    @media screen and (min-width:1400px) {
+      font-size: 18px;
+    }
+  }
+  .btn-enq{
+    @extend.nav-link;
+    padding: 10px 45px;
+     background:$blue-light;
+     color: $white;
+     font-family: $archivo;
+     font-weight: 500;
+     border: 0;
+     border-radius: 32px;
+
+     &:focus{
+       outline: none;
+       box-shadow: none;
+     }
+  }
+}

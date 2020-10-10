@@ -1,0 +1,62 @@
+
+<div class="banner-section">
+   <div class="container-fluid">
+     <div class="header-section">
+       <app-header></app-header>
+     </div>
+   </div>
+
+
+<div class="carousel-wrapper">
+  <!-- Container -->
+  <div class="container">
+
+
+      <!-- Carousel text container -->
+      <section class="carousel-text-container">
+        <!-- Carousel Titel -->
+        <h2 class="carousel-title">{{carouselTitle}}</h2>
+        <!-- /..Carousel Titel -->
+
+        <!-- indicator -->
+        <ol class="carousel-inticator">
+          <ng-container *ngFor="let item of carouselItems; let i = index">
+            <li (click)="navTo(i)" [ngClass]="{'active': i === carouselIndex}"></li>
+          </ng-container>
+        </ol>
+        <!-- /..inticator -->
+      </section> <!-- /..Carousel text container -->
+
+
+    <!-- Carousel Container -->
+    <section class="carousel-container">
+      <div class="carousel-shape">
+        <div class="carousel-items" [ngClass]="{'active': i === carouselIndex}" *ngFor="let item of carouselItems; let i = index">
+          <img [src]="item.imageLarge" >
+        </div>
+
+      </div>
+
+
+    </section> <!-- /..Carousel Container -->
+
+    <div class="row">
+      <div class="col-lg-4"  *ngFor="let item of carouselItems; let i = index">
+          <div class="media-card"  [ngClass]="{'active': i === carouselIndex}"  (click)="navTo(i)">
+            <figure class="media-image">
+                <img [src]="item.imageSmall">
+            </figure>
+            <div class="media-content">
+                <h4>{{item.title}}</h4>
+                <p>{{item.details}}</p>
+                <a class="details-btn" href="">Know More</a>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+  </div> <!-- /..Container -->
+</div>
+
+</div>

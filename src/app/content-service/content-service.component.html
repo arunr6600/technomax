@@ -1,0 +1,131 @@
+
+
+<section class="content-services">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="engg-solution-text-area">
+            <span class="label-text">About Technomax</span>
+            <h1 class="main-title">We Engineer Solutions that Supports the Industrial Sector.</h1>
+            <p class="sub-text">Technomax, with over 14 years of industrial experience, we are preferred source
+              for material
+              procurement and maintenance services for our customers. Our dedicated, qualified and highly
+              experienced resources work closely with customers to offer the best services.</p>
+
+            <a class="details-btn" href="">Know More</a>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="engg-image-wrapper">
+            <div class="box1"> 
+             
+            </div>
+            <div class="box2"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="content-wrapper">
+        <h1 class="main-title">What We Do</h1>
+        <p class="sub-text">As an industry expert, we are involved in trading, stocking and distribution of engineering
+          products.
+          We
+          are specialized in erection, installation and commissioning of industrial cranes and other lifting
+          equipment.</p>
+      </div>
+      <div class="card-section">
+        <div class="row">
+          <div class="col-lg-3" *ngFor='let card of cards'>
+            <div class="card-wrapper">
+              <div class="image-box">
+                <img [src]="card.img" alt="">
+              </div>
+              <div class="data-wrapper">
+                <p class="text">{{card.title}}</p>
+                <a class="details-btn" href="">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</section>
+
+
+<!-- What’s New @ Technomax -->
+
+<section class="technology-career">
+
+ <div class="container">
+    <div class="tech-content-section">
+      <div class="title-wrapper d-flex align-content-center justify-content-between">
+        <h1 class="title">What’s New @ Technomax</h1>
+        <a href="" class="view">View All</a>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" *ngFor = "let blog of blogs">
+          <div class="blog-wrapper">
+            <div class="image-box">
+              <img [src]="blog.img" alt="">
+            </div>
+            <div class="blog-caption d-flex align-items-center justify-content-between">
+              <span class="name">{{blog.text}} </span>
+              <span class="date"> {{blog.date}}</span>
+            </div>
+            <p class="title">{{blog.title}}</p>
+            <a href="" class="details-btn">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="news-wrapper">
+            <div class="title-portion d-flex align-items-center justify-content-between">
+              <span class="name">NEWS</span>
+              <span class="date">Jul 14, 2018</span>
+            </div>
+            <h2 class="main-text">Is ELD Mandate and Hours of Service compliance a cost or a benefit for Carriers and
+              Shippers?</h2>
+              <p class="sub-text">Two-thousand Canadians get killed every year and 10,000 are seriously injured in
+                collisions involving a heavy truck. The fatal crash rate for large…</p>
+                <a href="" class="details-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+ <div class="career-section">
+<div class="wrapper">
+  <div class="container">
+<div class="row">
+      <div class="col-lg-6">
+        <div class="career-data-wrapper">
+          <span class="mail">Career@Technomax</span>
+          <h1 class="title">Interested in working with a bunch of talented and dedicated professionals?</h1>
+          <button type="button" class="btn-blue">Career Openings</button>
+          <label class="input-label" for="">Subscribe our Newsletter</label>
+          <div class="input-wrapper">
+            <input type="email">
+            <a class="arrow" href="">
+             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="image-wrapper">
+          <div class="image-box">
+            <img src="../../assets/images/132.png" alt="">
+          </div>
+        </div>
+      </div>
+</div>
+  </div>
+</div>
+ </div>
+</section>

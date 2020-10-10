@@ -1,0 +1,568 @@
+@import '~src/scss/_variables';
+
+
+// section-content-section
+
+.content-services {
+
+  background-image: url('../../assets/images/Path15303.svg');
+  background-repeat: no-repeat;
+  background-position: 75% 0%;
+
+  .content {
+    margin-bottom: 150px;
+
+    .engg-solution-text-area {
+
+      @media screen and (max-width:600px) {
+        margin-bottom: 100px;
+      }
+
+      .label-text {
+        color: $gray;
+        font-family: $archivo;
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 20px;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 18px;
+        }
+      }
+
+      .main-title {
+        font-size: 30px;
+        font-weight: 400;
+        color: $dark;
+        margin-bottom: 30px;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 34px;
+        }
+      }
+
+      .sub-text {
+        font-size: 16px;
+        font-family: $archivo;
+        font-weight: 400;
+        color: $dark;
+        margin-bottom: 30px;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .engg-image-wrapper {
+      position: relative;
+      max-width: 370px;
+      height: 476px;
+      margin: auto;
+      transition: 0.5s ease;
+      border-radius: 20px;
+
+      &:hover {
+        .box1 {
+          background-size: 170%;
+        }
+
+        .box2 {
+          background-size: 390%;
+
+        }
+      }
+
+      &::before {
+        content: url('../../assets/images/Union-12.svg');
+        position: absolute;
+        right: -100px;
+        z-index: -1;
+        top: 0;
+
+        @media screen and(max-width:600px) {
+          right: 0;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        right: 45px;
+        border-right: 7px solid;
+        border-bottom: 7px solid;
+        color: $green-light;
+        z-index: 1;
+      }
+
+      .box1 {
+        position: absolute;
+        background-image: url('../../assets/images/engg-image.png');
+        width: 222px;
+        height: 452px;
+        border-radius: 16px;
+        background-repeat: no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0px;
+        background-size: 160%;
+        transition: 0.5s ease;
+        overflow: hidden;
+      }
+
+      .box2 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 16px;
+        right: 18px;
+        top: 81px;
+        width: 108px;
+        height: 303px;
+        background-image: url('../../assets/images/engg-image.png');
+        background-position: right;
+        transition: 0.5s ease;
+        overflow: hidden;
+        background-size: 350%;
+        background-repeat: no-repeat;
+
+      }
+    }
+  }
+
+  .services {
+    .content-wrapper {
+      text-align: center;
+
+      .main-title {
+        display: inline-block;
+        position: relative;
+        color: $dark;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 44px;
+        font-family: $archivo;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: -30px;
+          transform: translateX(-50%);
+          height: 24px;
+          width: 7px;
+          border-left: 7px solid $green-light;
+          z-index: 1;
+        }
+      }
+
+      .sub-text {
+        max-width: 1170px;
+        font-size: 20px;
+        font-family: $roboto;
+        font-weight: 300;
+        color: $dark;
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 100px;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .card-section {
+      position: relative;
+
+      &::before {
+        content: url('../../assets/images/Union-12.svg');
+        position: absolute;
+        left: -40px;
+        top: -60px;
+      }
+
+      .card-wrapper {
+        @media screen and (max-width:600px) {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .image-box {
+          width: 255px;
+          height: 230px;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-bottom: 20px;
+
+          img {
+            transition: 0.5s ease;
+            object-fit: cover;
+          }
+
+          @media screen and (max-width:600px) {
+            margin: auto;
+            margin-bottom: 10px;
+          }
+
+          @media (min-width: 1400px) and (max-width:1920px) {
+            width: 100%;
+          }
+        }
+
+        .data-wrapper {
+          .text {
+            font-size: 15px;
+            font-family: $archivo;
+            font-weight: 600;
+            color: $dark;
+            margin-bottom: 20px;
+
+            @media (min-width: 1400px) and (max-width:1920px) {
+              font-size: 22px;
+              height: 100px;
+            }
+          }
+        }
+
+        &:hover {
+          .image-box {
+            img {
+              transform: scale(1.2);
+            }
+          }
+
+          .data-wrapper {
+            .text {
+              color: $blue-light;
+            }
+          }
+
+          .details-btn {
+            &::before {
+              border-color: $green-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+hr {
+  margin: 70px 0;
+}
+
+
+
+.technology-career {
+  background-image: url('../../assets/images/ring.svg');
+  background-repeat: no-repeat;
+  background-position-x: 200%;
+  background-size: 60%;
+  background-position-y: 100%;
+
+  .tech-content-section {
+    .title-wrapper {
+      margin-bottom: 50px;
+
+      @media screen and (max-width:600px) {
+        flex-direction: column;
+      }
+
+      .title {
+        position: relative;
+        font-family: $archivo;
+        font-weight: 700;
+        font-size: 30px;
+        color: $dark;
+
+        @media screen and (max-width:600px) {
+          font-size: 24px;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -20px;
+          width: 30px;
+          height: 7px;
+          border-bottom: 7px solid $green-light;
+        }
+      }
+
+      .view {
+        font-size: 16px;
+        font-family: $archivo;
+        font-weight: 400;
+        color: $blue-shade;
+
+        @media screen and (max-width:600px) {
+          text-align: right;
+        }
+      }
+    }
+
+    .blog-wrapper {
+      @media screen and (max-width:600px) {
+        margin-bottom: 30px;
+      }
+
+      .image-box {
+        margin-bottom: 20px;
+        // width: 350px;
+        height: 165px;
+        overflow: hidden;
+        border-radius: 10px;
+
+        img {
+          transition: 0.5s ease;
+        }
+      }
+
+      .blog-caption {
+        margin-bottom: 10px;
+
+      }
+
+      .title {
+        font-size: 16px;
+        font-family: $roboto;
+        font-weight: 400;
+        color: $semi-dark;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 22px;
+        }
+      }
+
+      &:hover {
+        .image-box {
+          img {
+            transform: scale(1.1);
+          }
+        }
+
+        .title {
+          color: $blue-light;
+        }
+
+        .details-btn {
+          &::before {
+            border-color: $green-light;
+          }
+        }
+
+      }
+    }
+
+    .name {
+      font-size: 12px;
+      font-family: $archivo;
+      font-weight: 600;
+      color: $blue-medium;
+    }
+
+    .date {
+      font-size: 12px;
+      font-family: $muli;
+      font-weight: 400;
+      color: $gray;
+    }
+
+    .news-wrapper {
+      @media screen and (max-width:600px) {
+        margin-bottom: 30px;
+      }
+
+      .title-portion {
+        margin-bottom: 30px;
+      }
+
+      .main-text {
+        font-size: 18px;
+        font-family: $roboto;
+        font-weight: 400;
+        color: $semi-dark;
+        margin-bottom: 25px;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 22px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .sub-text {
+        font-size: 14px;
+        font-family: $archivo;
+        font-weight: 400;
+        color: $semi-dark;
+
+        @media (min-width: 1400px) and (max-width:1920px) {
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  // career
+
+  .career-section {
+    min-height: 110vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../assets/images/blue-bg.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    @media screen and (max-width:992px) {
+      min-height: auto;
+      background: $blue-medium;
+      display: block;
+      padding: 30px 0;
+    }
+
+    .row {
+      @media screen and (max-width:600px) {
+        flex-direction: column-reverse;
+      }
+
+    }
+
+    .wrapper {
+      .career-data-wrapper {
+        padding-top: 15%;
+
+        .mail {
+          font-size: 14px;
+          font-family: $archivo;
+          font-weight: 500;
+          color: $green-light;
+          display: inline-block;
+          margin-bottom: 20px;
+            @media (min-width: 1400px) and (max-width:1920px) {
+              font-size: 18px;
+            }
+        }
+
+        .title {
+          font-size: 32px;
+          font-weight: 400;
+          color: $white;
+          font-family: $roboto;
+          margin-bottom: 40px;
+            @media (min-width: 1400px) and (max-width:1920px) {
+              font-size: 50px;
+              margin-bottom: 60px;
+            }
+        }
+
+        .input-label {
+          font-size: 18px;
+          font-family: $archivo;
+          font-weight: 500;
+          color: $white;
+          display: block;
+          margin: 20px 0;
+            @media (min-width: 1400px) and (max-width:1920px) {
+              font-size: 22px;
+              margin-bottom: 30px;
+            }
+        }
+
+        .input-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: transparent;
+          border-bottom: 2px solid $green-light;
+          padding-bottom: 10px;
+
+          input {
+            background: transparent;
+            border: 0;
+            width: 100%;
+            color: $gray;
+            font-size: 17px;
+            font-family: $archivo;
+            font-weight: 500;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .arrow {
+            color: $white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      .image-wrapper {
+        width: 370px;
+        height: 370px;
+        border-radius: 50%;
+        background-color: $white;
+        border: 20px solid $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+
+        @media screen and(max-width:992px) {
+          width: 300px;
+          height: 300px;
+        }
+
+        &::before,
+        &::after {
+          content: url('../../assets/images/Union-12.svg');
+          position: absolute;
+          right: -10px;
+          top: -25%;
+        }
+
+        &::after {
+          top: auto;
+          bottom: -25%;
+        }
+
+        .image-box {
+          width: 370px;
+          height: 370px;
+          border-radius: 50%;
+          background-color: #fff;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+
+          @media screen and(max-width:992px) {
+            width: 300px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}

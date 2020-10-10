@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+body {
+  font-family: "Roboto Slab", serif !important;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #002765;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #002765;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #002765;
+}
+
+.details-btn, .details-btn-lg {
+  font-size: 14px;
+  color: #00317E;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+}
+
+.details-btn-lg {
+  font-size: 16px;
+}
+
+.details-btn::before, .details-btn-lg::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+  border-color: #899AA7;
+}
+
+.details-btn:hover, .details-btn-lg:hover {
+  color: #00317E;
+}
+
+.details-btn:hover::before, .details-btn-lg:hover::before {
+  border-color: #B2C91E;
+}

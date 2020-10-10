@@ -1,0 +1,95 @@
+@import '~src/scss/_variables';
+
+
+
+.footer-container{
+    margin-top: 100px;
+
+    .footer-main{
+         @media screen and(max-width:600px) {
+          margin-bottom: 20px;
+         }
+         .about {
+           .logo {
+             max-width: 170px;
+              @media screen and(max-width:600px) {
+                margin: auto;
+              }
+           }
+
+           .list-wrapper {
+             ul {
+               padding: 0;
+               list-style: none;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               flex-wrap: wrap;
+               @media screen and(max-width:600px) {
+                flex-wrap: wrap;
+                margin-top: 30px;
+               }
+               li {
+                   @media screen and(max-width:600px) {
+                    width: 33.33%;
+                    margin-bottom: 5px;
+                    margin-right: 0;
+                   }
+                 &:nth-last-child(1) {
+                   margin-right: 0;
+                 }
+
+                 a {
+                   font-size: 14px;
+                   font-family: $archivo;
+                   font-weight: 500;
+                   color: $blue-medium;
+                   margin-right: 10px;
+                     @media (min-width: 1400px) and (max-width:1920px) {
+                     font-size: 18px;
+                     }
+                 }
+               }
+             }
+           }
+
+         }
+
+         .address {
+           font-size: 16px;
+           font-family: $archivo;
+           font-weight: 500;
+           color: $blue-medium;
+           line-height: 40px;
+            @media (min-width: 1400px) and (max-width:1920px) {
+              font-size: 20px;
+            }
+           @media screen and(max-width:600px) {
+            text-align: left;
+            line-height: inherit;
+            margin-top: 30px;
+           }
+         }
+    }
+    .footer-bottom{
+        padding: 25px 0;
+        background:#899aa714;
+        .wrapper{
+            color: $gray;
+            font-size: 12px;
+            font-family: $archivo;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+           @media (min-width: 1400px) and (max-width:1920px) {
+             font-size: 15px;
+           }
+            @media screen and (max-width:600px) {
+              justify-content: center;
+            }
+        }
+    }
+   
+}
